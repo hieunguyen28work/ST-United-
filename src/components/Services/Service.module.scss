@@ -1,0 +1,208 @@
+@import "./_mixins.scss";
+
+.wrapperService {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  background-image: url("../../assets/image/houzez-header-4.jpg");
+  min-height: 1000px;
+  .serviceTop {
+    padding-top: 100px;
+    text-align: center;
+    min-height: 20%;
+    h2 {
+      color: #fff;
+      text-transform: inherit;
+      font-weight: 600;
+      text-align: inherit;
+      font-size: 26px;
+      font-family: "Roboto";
+    }
+    h3 {
+      color: #fff;
+      text-transform: inherit;
+      font-weight: 100;
+      text-align: inherit;
+      font-size: 20px;
+      font-family: "Roboto";
+    }
+  }
+  .serviceBot {
+    min-height: 80%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+    .serviceMain {
+      min-height: 550px;
+      background-color: #ffffff;
+      border: 0.5px solid #f1f0e3;
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.01);
+        box-shadow: 0 70px 70px rgba(0 0 0/20%);
+        transform: translate(0, -10px);
+        border: 0.5px solid #f1f0e3;
+      }
+      .serviceImage {
+        margin-top: 80px;
+        text-align: center;
+        margin-bottom: 80px;
+        img {
+          width: 40%;
+        }
+      }
+      .serviceTitle {
+        text-align: center;
+        h2 {
+          font-size: 23px;
+          line-height: 28px;
+          color: #00061f;
+          min-height: 50px;
+        }
+      }
+      .serviceDescription {
+        padding-left: 27px;
+        padding-right: 27px;
+        min-height: 130px;
+        p {
+          font-size: 17px;
+          line-height: 23px;
+          text-align: center;
+          color: #636363;
+          font-weight: 300;
+        }
+      }
+      .serviceSeemore {
+        text-align: center;
+        p {
+          padding-bottom: 20px;
+          color: #33c1f5;
+          a {
+            font-size: 18px;
+            line-height: 22px;
+            &:hover {
+              color: green;
+            }
+          }
+        }
+      }
+    }
+}
+}
+    @include mobile(739px){
+    .wrapperService{
+    .serviceTop{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        h2{
+            font-size: 18px !important;
+        }
+        h3{
+            margin-bottom: -80px;
+            font-size: 15px !important;
+        }
+    }
+    .serviceBot{
+        padding-left: 40px;
+        padding-right: 40px;
+            .serviceMain{
+                min-height: 350px;
+                .serviceImage{
+                    img{
+                        width: 150px;
+                        margin-top: -30px;
+                    }
+                }
+                .serviceTitle{
+                    margin-top: -50px;
+                    h2{
+                        font-size: 20px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+                .serviceDescription{
+                    margin-top: -15px;
+                    min-height: 80px;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .serviceSeemore{
+                    height: 50px;
+                    a{
+                        p{
+                            font-size: 12px;                   
+                        }
+                    }                  
+                }
+            }
+    }
+    .serviceDescription {
+      margin-top: -15px;
+      min-height: 80px;
+      p {
+        font-size: 14px;
+      }
+    }
+    .serviceSeemore {
+      height: 50px;
+      a {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+@include tablet(740px, 1023px) {
+    .wrapperService{
+    margin-top: 60px !important;
+    margin-bottom: 10px !important;
+    .serviceTop {
+      padding-left: 95px;
+      padding-right: 95px;
+      h3 {
+        padding: 30px;
+        padding-right: 30px;
+        margin-top: -38px;
+        margin-bottom: -80px;
+      }
+    }
+    .serviceBot {
+      .serviceMain {
+        min-height: 500px;
+        .serviceImage {
+          img {
+            width: 150px;
+            margin-top: -30px;
+          }
+        }
+        .serviceTitle {
+          margin-top: -30px;
+          min-height: 80px;
+          padding-left: 20px;
+          padding-right: 20px;
+          h2 {
+            font-size: 22px;
+          }
+        }
+        .serviceDescription {
+          margin-top: -15px;
+          min-height: 180px;
+
+          p {
+            font-size: 16px;
+          }
+        }
+        .serviceSeemore {
+          a {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }}

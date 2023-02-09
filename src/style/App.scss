@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Cabin:300,400,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 15px;
+  color: #505050;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+  line-height: 26px;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-transform: inherit;
+  text-align: inherit;
+  margin: 0 0 26px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+// Padding Margin
+.mt32{
+  margin-top: 32px;
+}
+
